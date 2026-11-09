@@ -1,0 +1,10 @@
+Options -Indexes
+
+# Block direct access to configuration, data and tooling files
+<FilesMatch "^(config\.php|config\.sample\.php|composer\.(json|lock)|generate_deck\.js|README\.md)$">
+    Require all denied
+</FilesMatch>
+<FilesMatch "\.(sql|log|eml|pptx)$">
+    Require all denied
+</FilesMatch>
+RedirectMatch 403 ^.*/(vendor|\.history)/.*$

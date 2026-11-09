@@ -1,0 +1,12 @@
+{
+    "name": "huduma/smartassist",
+    "description": "Huduma SmartAssist - AI-assisted guidance, appointment booking and request tracking for Huduma Centres",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "anthropic-ai/sdk": "*"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
